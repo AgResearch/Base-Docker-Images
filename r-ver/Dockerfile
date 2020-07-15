@@ -1,10 +1,5 @@
 FROM debian:stretch
 
-LABEL org.label-schema.license="GPL-2.0" \
-      org.label-schema.vcs-url="https://github.com/rocker-org/rocker-versioned" \
-      org.label-schema.vendor="Rocker Project" \
-      maintainer="Carl Boettiger <cboettig@ropensci.org>"
-
 ARG R_VERSION
 ARG BUILD_DATE
 ENV BUILD_DATE ${BUILD_DATE:-2019-04-26}
